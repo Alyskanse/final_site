@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fish Database</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5d62ba831c.js" crossorigin="anonymous"></script>
+    <script src="site.js"></script>
+</head>
+<body>
+
+<div class="jumbotron">
+    <h1 class="display-4">Fish Database</h1>
+    <hr class="my-4">
+    <p>Search for a fish! <i class="fas fa-fish"></i></p>
+
+    <form class="form-inline d-flex justify-content-center md-form form-sm mt-0">
+        <i class="fas fa-search" aria-hidden="true"></i>
+        <input id="fish-refine" class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"
+               aria-label="Search">
+    </form>
+</div>
+
+
+
+<table class="table table-bordered table-striped">
+    <thead>
+    <tr>
+        <th>Number</th>
+        <th>Fish Genus and Species</th>
+        <th>Non Scientific Name</th>
+        <th>Danger Level <i class="fas fa-exclamation-triangle"></i></th>
+        <th>Comments</th>
+        <th>Image <i class="far fa-image"></i></th>
+
+    </tr>
+    </thead>
+    <tbody id="fishlist">
+    </tbody>
+</table>
+</body>
+</html>
